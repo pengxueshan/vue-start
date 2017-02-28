@@ -1,0 +1,19 @@
+{
+  "apps": [{
+    "name": "server",
+    "script": "./server/server.js",
+    "merge_logs": true,
+    "max_restarts": 3,
+    "args": [
+      "--color"
+    ],
+    "watch": [
+      "server",
+      "config"
+    ],
+    "env": {
+      "NODE_ENV": "development",
+      "ENV": "dev"
+    }
+  }]
+}
