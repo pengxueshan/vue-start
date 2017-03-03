@@ -13,13 +13,7 @@ export default new Router({
         y: 0
     }),
     routes: [{
-        path: '/redirect',
-        component: RedirectView
-    }, {
         path: '/index',
         component: IndexView
-    }, {
-        path: '*',
-        redirect: '/index'
     }]
 })

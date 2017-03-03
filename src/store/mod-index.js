@@ -6,9 +6,7 @@ export default (client) => ({
         indexState: 'indexState',
     },
     actions: {
-        indexActions({
-            commit,
-        }) {
+        indexActions({commit}) {
             return commit('indexActionsSuc')
         },
     },

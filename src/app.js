@@ -42,7 +42,7 @@ const app = new Vue({
     ...App // Object spread copying everything from App.vue
 });
 
-app.$store.dispatch('getUserInfo')
+// app.$store.dispatch('getUserInfo')
 
 // sync the router with the vuex store. this registers `store.state.route`
 sync(store, app.$router);

@@ -1,12 +1,10 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import createLogger from 'vuex/dist/logger'
 import ModIndex from './mod-index'
 import ApiClient from '../utils/api-client'
 import Cookie from '../utils/cookie'
 
-import {
-    fetchData,
-} from './api'
 Vue.use(Vuex);
 
 Vue.config.debug = true;
@@ -24,10 +22,7 @@ const store = new Vuex.Store({
     },
 
     actions: {
-        globalActions({
-            commit,
-            dispatch
-        }) {
+        globalActions({commit, dispatch}) {
             return commit('actionsSuc')
         },
     },

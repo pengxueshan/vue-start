@@ -1,6 +1,6 @@
 <template>
     <div id="app" ref='app' class="wrap">
-        vue start
+        <router-view></router-view>
     </div>
 </template>
 <script>
@@ -11,21 +11,14 @@
 
     export default {
         name: 'App',
-        components: {
-        },
         data() {
             return {}
         },
-
         computed: Object.assign({
-            localState: 'localState'
+            localState() {}
         }, mapState({
             globalState: 'globalState',
         })),
-
-        mounted() {
-        },
-
         methods: Object.assign({
             localActions() {}
         }, mapActions({
