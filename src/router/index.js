@@ -15,5 +15,8 @@ export default new Router({
     routes: [{
         path: '/index',
         component: IndexView
+    }, {
+        path: '*',
+        redirect: '/index'
     }]
 })
